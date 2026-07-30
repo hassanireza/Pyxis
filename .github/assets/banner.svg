@@ -1,0 +1,29 @@
+<svg width="960" height="220" viewBox="0 0 960 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="220" rx="16" fill="#0a0b0f" />
+  <rect x="0.5" y="0.5" width="959" height="219" rx="15.5" stroke="#262b38" />
+
+  <rect x="40" y="60" width="64" height="64" rx="16" fill="#5B7FE0" />
+  <path
+    d="M62 76c0-2.2 1.8-4 4-4h6c2.2 0 4 1.8 4 4v4.4H65.6v2h14.4c2.2 0 4 1.8 4 4V104c0 2.2-1.8 4-4 4h-6v-4.4H68v-6h10.4v-2H64c-2.2 0-4-1.8-4-4V76Z"
+    fill="white"
+  />
+  <circle cx="66.2" cy="70.2" r="1.8" fill="#5B7FE0" />
+  <circle cx="77.8" cy="109.8" r="1.8" fill="#5B7FE0" />
+
+  <text x="128" y="98" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#eef0f5">Pyxis</text>
+  <text x="128" y="126" font-family="Arial, sans-serif" font-size="15" fill="#a7aec2">A Python only notebook that runs entirely in your browser</text>
+
+  <g font-family="Consolas, monospace" font-size="13">
+    <rect x="40" y="150" width="180" height="30" rx="6" fill="#12141b" stroke="#262b38" />
+    <text x="52" y="169" fill="#7b9aec">In [1]:</text>
+    <text x="110" y="169" fill="#d5d9e0">print("hi")</text>
+
+    <rect x="236" y="150" width="180" height="30" rx="6" fill="#12141b" stroke="#262b38" />
+    <text x="248" y="169" fill="#6ecabc">Out:</text>
+    <text x="300" y="169" fill="#6ecabc">hi</text>
+
+    <rect x="432" y="150" width="200" height="30" rx="6" fill="#12141b" stroke="#262b38" />
+    <text x="444" y="169" fill="#d9a94e">kernel</text>
+    <text x="502" y="169" fill="#a7aec2">ready</text>
+  </g>
+</svg>
