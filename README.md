@@ -9,11 +9,13 @@
 [![Made with TypeScript](https://img.shields.io/badge/made%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-4FB8A8?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
 [![Powered by Pyodide](https://img.shields.io/badge/powered%20by-Pyodide-3776AB?style=flat-square&logo=python&logoColor=white)](https://pyodide.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-6b7288?style=flat-square)](./LICENSE)
+[![License: Private](https://img.shields.io/badge/license-private%2C%20all%20rights%20reserved-6b7288?style=flat-square)](./LICENSE)
 
 **A Python only computational notebook that runs entirely in your browser.**
 
 No server. No account. No data ever leaves your machine.
+
+This is a private portfolio project, shared for viewing only.
 
 </div>
 
@@ -149,43 +151,6 @@ public/
 
 <br />
 
-## Running locally
-
-Requirements: Node.js 20 or later.
-
-```bash
-npm install
-npm run dev
-```
-
-The dev server starts at `http://localhost:5173`. The kernel boots automatically on load; the first boot downloads the Pyodide runtime from a CDN, so it needs an internet connection and takes a few seconds.
-
-<br />
-
-## Building for production
-
-```bash
-npm run build
-npm run preview
-```
-
-Output goes to `dist/`. The base path for asset URLs is controlled by the `BASE_PATH` environment variable and defaults to `/pyxis/`, matching a GitHub Pages project site. Set it to `/` for a custom domain or a user/organization Pages site.
-
-<br />
-
-## Deployment
-
-`.github/workflows/deploy.yml` builds the app and publishes it to GitHub Pages on every push to `main`.
-
-1. Push this repository to GitHub.
-2. In the repository settings, under Pages, set the source to "GitHub Actions".
-3. Push to `main`, or trigger the workflow manually from the Actions tab.
-4. The site is published at `https://hassanireza.github.io/<repository-name>/`.
-
-The workflow sets the Vite base path to match the repository name automatically, so nothing needs to be edited after renaming the repository.
-
-<br />
-
 ## Notes on the Python runtime
 
 Pyodide ships a large subset of the Python standard library and can install many pure Python packages from PyPI through micropip, along with a growing set of packages already compiled to WebAssembly (numpy, pandas, and others). Packages that depend on native extensions without a WASM build will not install. The first cell run after a fresh page load takes a few seconds while the interpreter finishes booting, reflected by the kernel status pill in the toolbar.
@@ -194,4 +159,4 @@ Pyodide ships a large subset of the Python standard library and can install many
 
 ## License
 
-MIT, see [LICENSE](./LICENSE).
+All rights reserved. This is a private portfolio project, shared publicly for viewing and demonstration purposes only. No use, copying, modification, or redistribution is permitted without explicit written permission from the author. See [LICENSE](./LICENSE).
