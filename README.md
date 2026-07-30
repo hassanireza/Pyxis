@@ -4,8 +4,8 @@
 
 <br />
 
-[![Build](https://img.shields.io/github/actions/workflow/status/hassanireza/pyxis/deploy.yml?branch=main&label=build&style=flat-square)](https://github.com/hassanireza/pyxis/actions)
-[![Deployed on GitHub Pages](https://img.shields.io/badge/deployed-GitHub%20Pages-5B7FE0?style=flat-square)](https://hassanireza.github.io/pyxis/)
+[![Build](https://img.shields.io/github/actions/workflow/status/USERNAME/pyxis/deploy.yml?branch=main&label=build&style=flat-square)](https://github.com/USERNAME/pyxis/actions)
+[![Deployed on GitHub Pages](https://img.shields.io/badge/deployed-GitHub%20Pages-5B7FE0?style=flat-square)](https://USERNAME.github.io/pyxis/)
 [![Made with TypeScript](https://img.shields.io/badge/made%20with-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18-4FB8A8?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
 [![Powered by Pyodide](https://img.shields.io/badge/powered%20by-Pyodide-3776AB?style=flat-square&logo=python&logoColor=white)](https://pyodide.org/)
@@ -180,7 +180,7 @@ Output goes to `dist/`. The base path for asset URLs is controlled by the `BASE_
 1. Push this repository to GitHub.
 2. In the repository settings, under Pages, set the source to "GitHub Actions".
 3. Push to `main`, or trigger the workflow manually from the Actions tab.
-4. The site is published at `https://hassanireza.github.io/<repository-name>/`.
+4. The site is published at `https://<username>.github.io/<repository-name>/`.
 
 The workflow sets the Vite base path to match the repository name automatically, so nothing needs to be edited after renaming the repository.
 
