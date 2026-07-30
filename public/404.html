@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pyxis</title>
+    <script>
+      // Single page app fallback for GitHub Pages project sites.
+      // Redirects any unknown path back to the app root so client side
+      // state (none, in this case, since the app is a single route) loads correctly.
+      window.location.replace(
+        window.location.origin + window.location.pathname.split("/").slice(0, 2).join("/") + "/"
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
