@@ -1,29 +1,94 @@
-<svg width="960" height="220" viewBox="0 0 960 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="960" height="220" rx="16" fill="#0a0b0f" />
-  <rect x="0.5" y="0.5" width="959" height="219" rx="15.5" stroke="#262b38" />
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#7c8891" stop-opacity="0.12" />
+      <stop offset="60%" stop-color="#7c8891" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="panelFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12161a" />
+      <stop offset="100%" stop-color="#0d1013" />
+    </linearGradient>
+  </defs>
 
-  <rect x="40" y="60" width="64" height="64" rx="16" fill="#5B7FE0" />
-  <path
-    d="M62 76c0-2.2 1.8-4 4-4h6c2.2 0 4 1.8 4 4v4.4H65.6v2h14.4c2.2 0 4 1.8 4 4V104c0 2.2-1.8 4-4 4h-6v-4.4H68v-6h10.4v-2H64c-2.2 0-4-1.8-4-4V76Z"
-    fill="white"
-  />
-  <circle cx="66.2" cy="70.2" r="1.8" fill="#5B7FE0" />
-  <circle cx="77.8" cy="109.8" r="1.8" fill="#5B7FE0" />
+  <rect width="1200" height="300" rx="18" fill="#08090b" />
+  <rect width="1200" height="300" rx="18" fill="url(#glow)" />
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="17.5" stroke="#1c2126" />
 
-  <text x="128" y="98" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#eef0f5">Pyxis</text>
-  <text x="128" y="126" font-family="Arial, sans-serif" font-size="15" fill="#a7aec2">A Python only notebook that runs entirely in your browser</text>
-
-  <g font-family="Consolas, monospace" font-size="13">
-    <rect x="40" y="150" width="180" height="30" rx="6" fill="#12141b" stroke="#262b38" />
-    <text x="52" y="169" fill="#7b9aec">In [1]:</text>
-    <text x="110" y="169" fill="#d5d9e0">print("hi")</text>
-
-    <rect x="236" y="150" width="180" height="30" rx="6" fill="#12141b" stroke="#262b38" />
-    <text x="248" y="169" fill="#6ecabc">Out:</text>
-    <text x="300" y="169" fill="#6ecabc">hi</text>
-
-    <rect x="432" y="150" width="200" height="30" rx="6" fill="#12141b" stroke="#262b38" />
-    <text x="444" y="169" fill="#d9a94e">kernel</text>
-    <text x="502" y="169" fill="#a7aec2">ready</text>
+  <!-- Wordmark -->
+  <g>
+    <rect x="48" y="46" width="46" height="46" rx="6" fill="#08090b" stroke="#7c8891" stroke-opacity="0.4" />
+    <path
+      d="M65 60c0-1.5 1.2-2.7 2.7-2.7h4c1.5 0 2.7 1.2 2.7 2.7v3h-7v1.3h9.7c1.5 0 2.7 1.2 2.7 2.7V79c0 1.5-1.2 2.7-2.7 2.7h-4v-3h-2.7v-4h7v-1.3H67c-1.5 0-2.7-1.2-2.7-2.7v-4.4Z"
+      fill="#e6e3da"
+    />
+    <circle cx="67.4" cy="58.8" r="1.2" fill="#7c8891" />
+    <circle cx="76.6" cy="80.2" r="1.2" fill="#7c8891" />
   </g>
+  <text x="108" y="82" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="500" font-size="42" fill="#e6e3da" letter-spacing="0.3">Pyxis</text>
+
+  <text x="50" y="122" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" fill="#c9cfd2">Two focused tools, one page, zero servers.</text>
+  <text font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#6e7579">
+    <tspan x="50" y="146">A Python notebook and a Markdown workspace that run entirely</tspan>
+    <tspan x="50" y="164">in your browser — nothing you write ever leaves your machine.</tspan>
+  </text>
+
+  <!-- Mode pill -->
+  <rect x="50" y="186" width="248" height="34" rx="17" fill="#12161a" stroke="#1c2126" />
+  <rect x="53" y="189" width="118" height="28" rx="14" fill="#1c2126" stroke="#7c8891" stroke-opacity="0.35" />
+  <text x="70" y="208" font-family="'JetBrains Mono', 'Consolas', monospace" font-size="11.5" fill="#c9cfd2">NOTEBOOK</text>
+  <text x="196" y="208" font-family="'JetBrains Mono', 'Consolas', monospace" font-size="11.5" fill="#6e7579">MD PREVIEWER</text>
+
+  <!-- Right side: two mock app panels -->
+  <g transform="translate(660,44)">
+    <!-- Notebook mock -->
+    <rect x="0" y="0" width="235" height="212" rx="10" fill="url(#panelFade)" stroke="#1c2126" />
+    <rect x="0" y="0" width="235" height="30" rx="10" fill="#171b20" />
+    <rect x="0" y="20" width="235" height="10" fill="#171b20" />
+    <circle cx="16" cy="15" r="4" fill="#6f9c95" />
+    <text x="30" y="19" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8fb3ac">KERNEL READY</text>
+
+    <rect x="14" y="42" width="207" height="46" rx="5" fill="#0d1013" stroke="#1c2126" />
+    <text x="22" y="58" font-family="'JetBrains Mono', monospace" font-size="9" fill="#7c8891">In [1]</text>
+    <text x="22" y="74" font-family="'JetBrains Mono', monospace" font-size="10" fill="#c9cfd2">import pandas as pd</text>
+
+    <rect x="14" y="96" width="207" height="34" rx="5" fill="#0d1013" stroke="#1c2126" />
+    <text x="22" y="117" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8fb3ac">Out[1]  DataFrame · 4 rows</text>
+
+    <rect x="14" y="140" width="207" height="10" rx="2" fill="#171b20" />
+    <rect x="14" y="156" width="150" height="10" rx="2" fill="#171b20" />
+    <rect x="14" y="172" width="180" height="10" rx="2" fill="#171b20" />
+
+    <text x="14" y="200" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#9aa3a8">Notebook</text>
+  </g>
+
+  <g transform="translate(915,44)">
+    <!-- MD Previewer mock -->
+    <rect x="0" y="0" width="235" height="212" rx="10" fill="url(#panelFade)" stroke="#1c2126" />
+    <rect x="0" y="0" width="235" height="30" rx="10" fill="#171b20" />
+    <rect x="0" y="20" width="235" height="10" fill="#171b20" />
+    <g font-family="'Segoe UI', sans-serif" font-size="10.5" fill="#9aa3a8">
+      <text x="14" y="19" font-weight="700">B</text>
+      <text x="30" y="19" font-style="italic">I</text>
+      <text x="46" y="19" text-decoration="line-through">S</text>
+      <text x="64" y="19">H1</text>
+      <text x="86" y="19">•≡</text>
+      <text x="108" y="19">🔗</text>
+    </g>
+
+    <text x="14" y="56" font-family="Georgia, serif" font-style="italic" font-weight="500" font-size="19" fill="#e6e3da">Release notes</text>
+    <rect x="14" y="68" width="207" height="8" rx="2" fill="#171b20" />
+    <rect x="14" y="82" width="180" height="8" rx="2" fill="#171b20" />
+
+    <circle cx="18" cy="102" r="3" fill="#171b20" />
+    <rect x="28" y="98" width="150" height="8" rx="2" fill="#171b20" />
+    <circle cx="18" cy="118" r="3" fill="#171b20" />
+    <rect x="28" y="114" width="130" height="8" rx="2" fill="#171b20" />
+
+    <rect x="14" y="140" width="207" height="30" rx="5" fill="#0d1013" stroke="#1c2126" />
+    <text x="22" y="159" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#c9cfd2">## Release notes</text>
+
+    <text x="14" y="200" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#9aa3a8">MD Previewer</text>
+  </g>
+
+  <text x="1150" y="284" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10" fill="#4a4f53" letter-spacing="0.05em">RUNS 100% CLIENT-SIDE</text>
 </svg>
