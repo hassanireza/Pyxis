@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { useNotebookStore } from "../store/notebookStore";
 import { downloadHtml, downloadIpynb, downloadJson, downloadMarkdown, downloadPy } from "../lib/exportUtils";
 import { parseIpynb, parsePynbJson, readFileAsText } from "../lib/importUtils";
+import { AppMode, ModeSwitch } from "./ModeSwitch";
 import {
   BroomIcon,
   CodeIcon,
@@ -23,7 +24,7 @@ const statusLabel: Record<string, string> = {
   error: "Kernel error"
 };
 
-export function Toolbar() {
+export function Toolbar({ mode, onModeChange }: { mode: AppMode; onModeChange: (m: AppMode) => void }) {
   const notebook = useNotebookStore((s) => s.notebook);
   const kernelStatus = useNotebookStore((s) => s.kernelStatus);
   const bootKernel = useNotebookStore((s) => s.bootKernel);
@@ -59,6 +60,7 @@ export function Toolbar() {
           <LogoMark />
           <span className="brand-name">Pyxis</span>
         </div>
+        <ModeSwitch mode={mode} onChange={onModeChange} />
         <input
           className="title-input"
           value={notebook.meta.title}

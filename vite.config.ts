@@ -16,7 +16,18 @@ export default defineConfig({
       output: {
         manualChunks: {
           codemirror: ["@uiw/react-codemirror", "@codemirror/lang-python", "@codemirror/lang-markdown", "@codemirror/theme-one-dark"],
-          markdown: ["react-markdown", "remark-gfm"]
+          markdown: ["react-markdown", "remark-gfm"],
+          tiptap: [
+            "@tiptap/react",
+            "@tiptap/core",
+            "@tiptap/starter-kit",
+            "@tiptap/extension-image",
+            "@tiptap/extension-placeholder",
+            "@tiptap/extension-table",
+            "@tiptap/extension-task-list",
+            "@tiptap/extension-task-item",
+            "tiptap-markdown"
+          ]
         }
       }
     }
